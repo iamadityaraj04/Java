@@ -1,3 +1,4 @@
+// pass by value
 class IncrementDecrement{
 	
 	static int increment(int num) {
