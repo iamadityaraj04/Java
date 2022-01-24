@@ -11,7 +11,6 @@ class IncrementDecrement{
 	
 }
 
-
 public class java15{
 	
 	static void squareOfNumber(int number) {
@@ -21,8 +20,7 @@ public class java15{
 		System.out.println("[SqON] started");
 		
 		System.out.println("[SqON] number before is: "+number); // 11
-		
-		//number = number * number; // square the number and update the value of number
+	
 		number *= number; // same as above :) // 121
 		
 		System.out.println("[SqON] number after is: "+number); // 121
@@ -30,11 +28,8 @@ public class java15{
 		System.out.println("[SqON] finished");
 	}
 
-	// main is executed by JVM, whenever we run our program :)
 	public static void main(String[] args) {
-		
-		System.out.println("[main] started");
-		
+
 		int data = 10;
 		System.out.println("[main] data before is: "+data);
 		
@@ -42,7 +37,6 @@ public class java15{
 		
 		System.out.println("[main] data after is: "+data);
 
-		
 		System.out.println("[main] finished");
 
 	}
