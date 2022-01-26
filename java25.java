@@ -113,8 +113,7 @@ public class java25 {
 		System.out.println(uRef3.name+" can be called on "+uRef3.phone+" and lives in "+uRef3.addressLine);
 		System.out.println();
 		
-		// 4. Remove data from Object -> not possible, we can get the entire object deleted by GC
-		//System.gc();
+		// 4. Remove data from Object -> not possible, we can get the entire object deleted by garbage collector
 		
 	}
 
