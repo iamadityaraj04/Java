@@ -63,7 +63,6 @@ public class java28 {
 		
 		Dish dish1 = new Dish("McAloo Tikki Burger", 46, 1);
 		Dish dish2 = new Dish("McSpicy Paneer Wrap", 199, 1);
-		Dish dish3 = new Dish();
 		
 		dish1.increment();
 		dish1.increment();
@@ -95,20 +94,16 @@ public class java28 {
 		//System.out.println("array is: "+array);
 		
 		
-		// Dish[] array = new Dish[5];
-		// array[0] = dish1;
-		// array[1] = dish2;
-		// array[2] = dish3;
-		// array[3] = new Dish();
-		// array[4] = new Dish("Fires", 72, 2);
+		/*Dish[] array = new Dish[5];
+		array[0] = dish1;
+		array[1] = dish2;
+		array[2] = dish3;
+		array[3] = new Dish();
+		array[4] = new Dish("Fires", 72, 2);
 		
-		// /*for(int i=0;i<array.length;i++) {
-		// 	array[i].showDish();
-		// }*/
-		
-		// for(Dish dish : array) {
-		// 	dish.showDish();
-		// }
+		for(Dish dish : array) {
+			dish.showDish();
+		}*/
 		
 	}
 
