@@ -1,110 +1,69 @@
-class Dish{
+class Parent{
 	
-	// non static attributes -> property of object i.e. they are created inside object as storage container
-	String name;
-	int price;
-	int quantity;
+	String fname;
+	String lname;
+	//private int wealth;
+	int wealth;
 	
-	// static attribute -> property of class -> it is created inside the class as storgae container
-	static int totalQuantity; // static attribute is accessible in non static methods
-	static int numOfDishes;
-	static int totalAmount; // use this variable and write some snippets to calculate the total amount
-	
-	Dish(){
-		name = "Veggie Burger";
-		quantity = 1;
-		price = 76;
-		numOfDishes++;
-	}
-
-	Dish(String name, int price, int quantity) {
-		this.name = name;
-		this.price = price;
-		this.quantity = quantity;
-		totalQuantity += quantity;
-		numOfDishes++;
+	Parent(){
+		System.out.println("[Parent] Object Constructed");
+		fname = "John";
+		lname = "Watson";
+		wealth = 100000;	
 	}
 	
-	void increment() {
-		quantity++;
-		totalQuantity++;
+	void show() {
+		System.out.println("[Parent] Details: "+fname+" "+lname+" "+wealth);
 	}
-	
-	void decrement() {
-		quantity--;
-		
-		// static is accessible in non static
-		totalQuantity--;
-	}
-	
-	void showDish() {
-		System.out.println("Dish: "+name+" "+price+" "+quantity);
-	}
-	
-	// Property of Class
-	static void show() {
-		System.out.println("Total: "+totalQuantity);
-		System.out.println("Total Dishes: "+numOfDishes);
-		
-		// Assignment: Compute the total amount and show it
-		System.out.println("Total Amount: "+totalAmount); 
-		
-		// Property of Object is not accessible in Property of class
-		// non static not accessible in static
-		//System.out.println("Dish Name is: "+name); // error
-	}
-	
 }
 
+// Create Relationship of Parent and Child between 2 classes
+// using extends keyword in Java
+class Child extends Parent{
+	
+	String fname;
+	int wealth;
+	String companyName;
+	
+	Child(){
+		System.out.println("[Child] Object Constructed");
+		fname = "Fionna";
+		wealth = 200000;
+		companyName = "ABC Ltd";
+	}
+	
+	// ReDefining the same method, which is in the Parent, inside the child clas
+	// OVERRIDING
+	void show() {
+		super.show(); // super as a reference variable available in Child, to access the Parent's Property
+		System.out.println("[Child] Details: "+fname+" "+lname+" "+wealth+" "+companyName);
+	}
+}
+
+// Inheritance Rules:
+// Rule#1 : Before the object of Child, Object of Parent is constructed
+// Rule#2 : Child, can access anything in Parent, if child does not have it. If child has the same property, it will access of its own
+// Rule#3 : Child cannot access anything marked as private in Parent
 
 public class java28 {
 
 	public static void main(String[] args) {
 		
-		Dish dish1 = new Dish("McAloo Tikki Burger", 46, 1);
-		Dish dish2 = new Dish("McSpicy Paneer Wrap", 199, 1);
+		//Parent pRef = new Parent();
+		//pRef.show();
 		
-		dish1.increment();
-		dish1.increment();
-		
-		dish2.increment();
-		dish2.increment();
-		dish2.increment();
-		
-		dish1.decrement();
-		
-		dish1.showDish();
-		dish2.showDish();
-		
+		Child cRef = new Child();
 		
 		System.out.println();
-		Dish.show();
+		System.out.println("cRef is: "+cRef);
+		
+		// Previously, child here has no attribute wealth, it will update in the Parent Object
+		// Now, as child also has the wealth attribute, it will subtract from its own attribute
+		cRef.wealth -= 5000; 
+		
 		System.out.println();
-		
-		
-		//int[] array = {10, 20, 30};
-		/*int[] array = new int[3];
-		array[0] = 10;
-		array[1] = 20;
-		array[2] = 30;*/
-		
-		// Array of Objects -> Array of Reference Variables
-		//				  0      1      2
-		//Dish[] array = {dish1, dish2, dish3};
-		//System.out.println("array is: "+array);
-		
-		
-		/*Dish[] array = new Dish[5];
-		array[0] = dish1;
-		array[1] = dish2;
-		array[2] = dish3;
-		array[3] = new Dish();
-		array[4] = new Dish("Fires", 72, 2);
-		
-		for(Dish dish : array) {
-			dish.showDish();
-		}*/
-		
+		cRef.show();
+
 	}
 
 }
