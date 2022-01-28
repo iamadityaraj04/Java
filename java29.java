@@ -1,25 +1,19 @@
 class Car{
-    Car(){
-        System.out.println("Car Class");
-    }
+   
     public void vehicleType()
     {
      System.out.println("Vehicle Type: Car");
     }
  }
  class Ford extends Car{
-    Ford(){
-        System.out.println("Ford Class");
-    }
+   
     public void brand()
     {
      System.out.println("Brand: Ford");
     }
  }
  class model extends Ford{
-    model(){
-        System.out.println("Model Class");
-    }
+    
  
     public void carmodel()
     {
