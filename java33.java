@@ -21,7 +21,7 @@ class MyAppPaymentsPage{// extends PaymentGateway{
 }
 
 
-public class FinalKeyword {
+public class java33 {
 
 	public static void main(String[] args) {
 		
