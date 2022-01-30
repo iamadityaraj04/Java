@@ -71,24 +71,24 @@ public class java2 {
 		System.out.println("phn no. is: "+phoneNumber);
 		
 		// Upcasting 
-		int num1 = 200;
-		long num2 = num1; // Copy Operation -> UPCASTING i.e. we are copying 32 bits into 64 bits :)
+		//int num1 = 200;
+		//long num2 = num1; // Copy Operation -> UPCASTING i.e. we are copying 32 bits into 64 bits :)
 		
 		// Downcasting
 		//int num3 = num2; // error -> as we are copying 64bits into 32 bits
-		int num3 = (int)num2; // Put a cast and we can now copy the data
+		//int num3 = (int)num2; // Put a cast and we can now copy the data
 		// But, in above situation possible loss of data can occur
 		
 		// Floating Points
 		//float percentage = 75.7;
 		// floating point literals will be saved in 64 bits memory i.e. 75.7 in constant pool will be 64 bits
 		
-		float percentage = 75.7F; // f in the end will make literal to be stored in 32 bits
+		//float percentage = 75.7F; // f in the end will make literal to be stored in 32 bits
 		
-		double pi = 3.14; // OK as both are 64 bits
+		//double pi = 3.14; // OK as both are 64 bits
 		
 		// Down Casting :)
-		percentage = (float)pi; // ok
+		//percentage = (float)pi; // ok
 		
 		// 16 bits
 		char ch = 65; // ASCII Codes
@@ -103,8 +103,8 @@ public class java2 {
 		System.out.println(ch1+" "+ch2+" "+ch3);
 		
 		// Try writing your name in your native language :)
-		boolean internet = true; // 8 bits
-		internet = false;
+		//boolean internet = true; // 8 bits
+		//internet = false;
 		
 		// Primitives cannot store more than 1 value :)
 		//int ages = 10, 20, 30, 40, 50; // error -> cannot store more than 1 value
