@@ -2,9 +2,9 @@ public class java13{
 
 	public static void main(String[] args) {
 		
-		int[] usaCases = {635462, 73544521, 41324};
-		int[] indiaCases = {454643, 6253432, 88781};
-		int[] ukCases = {88734, 23909, 275345};
+		//int[] usaCases = {635462, 73544521, 41324};
+		//int[] indiaCases = {454643, 6253432, 88781};
+		//int[] ukCases = {88734, 23909, 275345};
 		
 		// Multi Dimensional Arrays
 		// Array of Arrays -> 2D
@@ -71,26 +71,26 @@ public class java13{
 		}
 		
 		
-		
-		int[][]a, b[];
+		//representation
+		//int[][]a, b[];
 		//above statement means
-		a = new int[3][3];    // 2d array
-		b = new int[5][2][1]; // 3d array :)
+		//a = new int[3][3];    // 2d array
+		//b = new int[5][2][1]; // 3d array :)
 		
 		// 3D Array
-		int[][][] array3D = {
+		// int[][][] array3D = {
 				
-								{
-									{1, 2, 3},
-									{4, 5, 6}
-								},
+		// 						{
+		// 							{1, 2, 3},
+		// 							{4, 5, 6}
+		// 						},
 								
-								{
-									{7, 8, 9},
-									{10, 11, 12}
-								}
+		// 						{
+		// 							{7, 8, 9},
+		// 							{10, 11, 12}
+		// 						}
 				
-						  };
+		// 				  };
 		
 	}
 
