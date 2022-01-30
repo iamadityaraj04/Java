@@ -19,13 +19,11 @@ class MyAppPaymentsPage{// extends PaymentGateway{
 		gateway.pay(amount);
 	}
 }
-
-
 public class java33 {
 
 	public static void main(String[] args) {
 		
-		final String appName = "eStore";
+		//final String appName = "eStore";
 		
 		// constants appName cannot be modified
 		//appName = "eStore - Shop Anywhere";
