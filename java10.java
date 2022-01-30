@@ -42,11 +42,9 @@ public class java10 {
 		// they will contain the hashcode for array
 		
 		// Syntax5
-		int a1[], a2; // a1 is reference to array and a2 is a normal int
+		//int a1[], a2; // a1 is reference to array and a2 is a normal int
 		int[] a3, a4; // a3 and a4 are both reference to an array
 		
-		a1 = new int[5];
-		a2 = 100;
 		
 		a3 = new int[5];
 		a4 = new int[10];
@@ -55,10 +53,15 @@ public class java10 {
 		
 		// update data in a4 1st index
 		a4[1] = 9;
-		
+		a3[4]=8;
 		for(int element: a4) {
 			System.out.print(element+" ");
 		}
+		System.out.println();
+		for(int element: a3) {
+			System.out.print(element+" ");
+		}
+
 	}
 
 }
