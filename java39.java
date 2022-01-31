@@ -9,23 +9,23 @@ public class java39 {
 		// i.e. we will have an object version of int through Integer class
 		
 		// BOXING: Converted primtive to Reference
-		Integer iRef = Integer.valueOf(i);
+		//Integer iRef = Integer.valueOf(i);
 		// UNBOXING: Get the int value back from Object
-		int j = iRef.intValue(); 
+		//int j = iRef.intValue(); 
 		
 		
 		// AUTO BOXING: Automatically i will be converted to iRef1. No need to valueOf Method
 		Integer iRef1 = i;
 		
 		// AUTO UNBOXING
-		int k = iRef1; // no need to execute intValue method
+		//int k = iRef1; // no need to execute intValue method
 		
 		// Same for every data type
 		char ch = 'A';
 		Character cRef = ch;
-		char ch1 = cRef;
 		
 		System.out.println(iRef1+" "+iRef1.hashCode());
+		System.out.println(cRef+" "+cRef.hashCode());
 		
 		/*
 			int -> Integer
